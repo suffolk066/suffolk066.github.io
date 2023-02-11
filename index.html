@@ -14,6 +14,7 @@
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/customCSS.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- 네비게이션 -->
@@ -34,11 +35,11 @@
             </div>
         </nav>
         <!-- 헤더 -->
-        <header class="masthead">
+        <header class="masthead custom-section">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Park's PORTFOLIO</h1>
+                        <h1 class="mx-auto my-0 text-uppercase" id="title"></h1>
                         <!-- <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2> -->
                         <!-- <a class="btn btn-primary" href="#about">Get Started</a> -->
                     </div>
@@ -46,12 +47,12 @@
             </div>
         </header>
         <!-- About-->
-        <section class="about-section text-center" id="about">
+        <section class="about-section text-center custom-section" id="about">
             <div class="container-fluid px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-white mb-4">안녕하세요! 신입 소프트웨어 개발자 박동현입니다.</h2>
-                        <p class="text-white-50">
+                    <div class="col-lg-8 custom-font">
+                        <h1 class="text-white mb-4">안녕하세요! 신입 소프트웨어 개발자 박동현입니다.</h2>
+                        <h4 class="text-white-50">
                             백엔드 기술에 관심이 있으며 다양한 기술들을 공부하는 것을 좋아합니다.<br>
                             22년 8월 ~ 23년 1월까지 국비교육으로 Java 과정을 수강하였으며,<br>
                             기본적인 CRUD 게시판을 만들 수 있습니다.
@@ -59,7 +60,7 @@
                     </div>
                     <div class="row gx-4 gx-lg-5 justify-content-center" style="margin-top: 5rem;">
                         <div class="col-lg-8">
-                            <h2 class="text-white mb-4">기술 스택</h2>
+                            <h2 class="text-white mb-4 custom-font">기술 스택</h2>
                         </div>
                     </div>
                     <div class="row mb-5 badge-src">
@@ -103,15 +104,16 @@
         </section>
 
         <!-- 프로젝트 -->
-        <section class="projects-section bg-light" id="projects">
+        <section class="projects-section bg-light custom-section" id="projects">
             <div class="container px-4 px-lg-5">
                 <!-- 프로젝트 입력 부분 -->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                     <div class="col-xl-8 col-lg-7"><a href="https://github.com/suffolk066/spring-project" target="_blank"><img class="img-fluid img-thumbnail mb-3 mb-lg-0" src="assets/img/project01.png" alt="..." /></a></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>팀 프로젝트</h4>
-                            <p class="text-black-50 mb-0">Spring을 이용한 영화 예매 사이트입니다.<br>관리자 페이지 구현과 DB 작성을 맡았습니다.<br>KMDB API를 이용한 영화 검색 기능과<br>영화 DB의 CRUD 기능을 구현하였습니다.</p>
+                            <h3>팀 프로젝트</h4>
+                            <p class="text-black-50 mb-0">Spring을 이용한 영화 예매 사이트입니다.<br>관리자 페이지 구현과 DB 작성을 맡았습니다.
+                                <br>KMDB API를 이용한 영화 검색 기능과<br>영화 DB의 CRUD 기능을 구현하였습니다.</p>
                         </div>
                     </div>
                 </div>
@@ -119,12 +121,12 @@
         </section>
         
         <!-- Contact -->
-        <section class="contact-section bg-black" id="contact">
+        <section class="contact-section bg-black custom-section" id="contact">
             <div class="container px-4 px-lg-5">
 
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h1 class="text-white text-center mb-4" style="font-size: 90px;margin-top: 10rem;margin-bottom: 10rem !important;">Contact Me</h1>
+                        <h3 class="text-uppercase text-white text-center mb-4" style="font-size: 90px;margin-top: 10rem;margin-bottom: 10rem !important;">Contact Me</h1>
                     </div>
                 </div>
 
@@ -165,9 +167,11 @@
 
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; suffok066 2023</div></footer>
-        <!-- Bootstrap core JS-->
+        <!-- CDN -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/customJS.js"></script>
     </body>
 </html>

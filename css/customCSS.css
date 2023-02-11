@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Chosun';
+    src: url('../assets/fonts/ChosunNm.woff');
+  }
+
+.custom-font {
+    font-family: 'Chosun', sans-serif;
+}
