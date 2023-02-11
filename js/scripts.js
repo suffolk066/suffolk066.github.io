@@ -6,6 +6,18 @@
 //
 // Scripts
 // 
+
+// 새로고침 할 때 밑으로 내려가는 것 방지
+$(document).ready(function(){
+    // 크롬 or IE12 이상부터만 적용됨
+    history.scrollRestoration = "manual"
+
+    // 강제로 스크롤 이동
+    setTimeout (function () {
+        scrollTo(0,0);
+        },100);
+});
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -50,4 +62,15 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    const text = "Park's PORTFOLIO";
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("title").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100 + Math.floor(Math.random() * 100));
+      }
+    }
+    typeWriter();
 });
+
